@@ -13,11 +13,7 @@ type GitmojiItem = {
   semver: string | null;
 };
 
-{
-  {
-    GITMOJI_DATA_PLACEHOLDER;
-  }
-}
+%GITMOJI_DATA_PLACEHOLDER%
 
 const server = new McpServer({
   name: "mcp-gitmoji",

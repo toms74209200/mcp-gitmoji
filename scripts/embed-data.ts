@@ -49,7 +49,7 @@ const embedData = async () => {
   }
 
   const output = template.replace(
-    "{{GITMOJI_DATA_PLACEHOLDER}}",
+    "%GITMOJI_DATA_PLACEHOLDER%",
     gitmojiConstant,
   );
 
