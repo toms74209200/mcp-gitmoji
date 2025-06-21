@@ -1,0 +1,26 @@
+{
+  "name": "@toms/mcp-gitmoji",
+  "description": "Model Context Protocol(MCP) server of gitmoji",
+  "version": "0.1.5",
+  "license": "MIT",
+  "exports": {
+    ".": "./main.ts"
+  },
+  "publish": {
+    "include": [
+      "main.ts",
+      "LICENSE",
+      "README.md"
+    ],
+    "exclude": [
+      "*.config.ts",
+      "*.test.ts"
+    ]
+  },
+  "tasks": {
+    "fetch": "deno run --allow-net --allow-read --allow-write scripts/fetch-gitmoji.ts",
+    "build": "deno task fetch && deno run --allow-read --allow-write scripts/embed-data.ts",
+    "test": "deno task build && vitest run --silent --config ./vite.config.ts",
+    "test:medium": "deno task build && vitest run --silent --config ./vite.medium.config.ts"
+  }
+}
