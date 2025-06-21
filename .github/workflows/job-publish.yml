@@ -17,6 +17,8 @@ jobs:
           deno-version: v2.x
       - name: Install Dependencies
         run: deno install
+      - name: Build
+        run: deno task build
       - name: Publish JSR
         run: deno publish
   release:
