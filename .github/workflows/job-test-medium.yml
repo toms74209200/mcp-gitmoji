@@ -14,7 +14,5 @@ jobs:
           deno-version: v2.x
       - name: Install Dependencies
         run: deno install
-      - name: Build
-        run: deno task build
       - name: Run Tests
         run: deno run -A npm:vitest run --silent --config ./vite.medium.config.ts
