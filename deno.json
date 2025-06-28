@@ -18,9 +18,7 @@
     ]
   },
   "tasks": {
-    "fetch": "deno run --allow-net --allow-read --allow-write scripts/fetch-gitmoji.ts",
-    "build": "deno task fetch && deno run --allow-read --allow-write scripts/embed-data.ts",
-    "test": "deno task build && vitest run --silent --config ./vite.config.ts",
-    "test:medium": "deno task build && vitest run --silent --config ./vite.medium.config.ts"
+    "test": "vitest run --silent --config ./vite.config.ts",
+    "test:medium": "vitest run --silent --config ./vite.medium.config.ts"
   }
 }
