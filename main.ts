@@ -3,6 +3,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import { gitmojis } from "gitmojis";
 
 type GitmojiItem = {
   emoji: string;
@@ -12,8 +13,6 @@ type GitmojiItem = {
   name: string;
   semver: string | null;
 };
-
-%GITMOJI_DATA_PLACEHOLDER%
 
 const server = new McpServer({
   name: "mcp-gitmoji",
@@ -32,9 +31,9 @@ server.registerTool(
   },
   ({ page = 1, limit = 10 }) => {
     const offset = (page - 1) * Math.min(limit, 50);
-    const gitmojis = GITMOJI_DATA.gitmojis;
-    const total = gitmojis.length;
-    const paginatedItems = gitmojis.slice(offset, offset + limit);
+    const gitmojiList = gitmojis;
+    const total = gitmojiList.length;
+    const paginatedItems = gitmojiList.slice(offset, offset + limit);
 
     const formatItem = (item: GitmojiItem) =>
       `${item.emoji} ${item.code} - ${item.description}`;
@@ -69,7 +68,7 @@ server.registerTool(
   },
   ({ query }) => {
     const searchTerm = query.toLowerCase();
-    const filtered = GITMOJI_DATA.gitmojis.filter(
+    const filtered = gitmojis.filter(
       (item: GitmojiItem) =>
         item.description.toLowerCase().includes(searchTerm) ||
         item.code.toLowerCase().includes(searchTerm) ||
