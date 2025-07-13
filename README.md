@@ -27,7 +27,6 @@ For Visual Studio Code:
       "command": "deno",
       "args": [
         "run",
-        "--allow-run",
         "jsr:@toms/mcp-gitmoji"
       ]
     }
