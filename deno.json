@@ -1,7 +1,7 @@
 {
   "name": "@toms/mcp-gitmoji",
   "description": "Model Context Protocol(MCP) server of gitmoji",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "exports": {
     ".": "./main.ts"
