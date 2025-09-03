@@ -1,7 +1,7 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@modelcontextprotocol/sdk@^1.17.1": "1.17.5_express@5.1.0_zod@3.25.76",
+    "npm:@modelcontextprotocol/sdk@^1.17.5": "1.17.5_express@5.1.0_zod@3.25.76",
     "npm:gitmojis@^3.15.0": "3.15.0",
     "npm:vite@^7.1.4": "7.1.4_picomatch@4.0.3",
     "npm:vitest@^3.2.4": "3.2.4_vite@7.1.4__picomatch@4.0.3",
@@ -1621,7 +1621,7 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:@modelcontextprotocol/sdk@^1.17.1",
+        "npm:@modelcontextprotocol/sdk@^1.17.5",
         "npm:gitmojis@^3.15.0",
         "npm:vite@^7.1.4",
         "npm:vitest@^3.2.4",
