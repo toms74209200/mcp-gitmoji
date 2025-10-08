@@ -3,7 +3,7 @@
   "specifiers": {
     "npm:@modelcontextprotocol/sdk@^1.19.1": "1.19.1_express@5.1.0_zod@3.25.76",
     "npm:gitmojis@^3.15.0": "3.15.0",
-    "npm:vite@^7.1.7": "7.1.9_picomatch@4.0.3",
+    "npm:vite@^7.1.9": "7.1.9_picomatch@4.0.3",
     "npm:vitest@^3.2.4": "3.2.4_vite@7.1.9__picomatch@4.0.3",
     "npm:zod@^3.25.76": "3.25.76"
   },
@@ -1635,7 +1635,7 @@
       "dependencies": [
         "npm:@modelcontextprotocol/sdk@^1.19.1",
         "npm:gitmojis@^3.15.0",
-        "npm:vite@^7.1.7",
+        "npm:vite@^7.1.9",
         "npm:vitest@^3.2.4",
         "npm:zod@^3.25.76"
       ]
