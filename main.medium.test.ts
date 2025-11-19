@@ -287,8 +287,13 @@ test("when passing invalid tool name then returns error message", async () => {
 
   const actual = await readLines();
 
-  expect(actual.error).toBeDefined();
-  expect(actual.error.message).toContain("Tool invalid-tool not found");
+  expect(actual.result).toBeDefined();
+  expect(actual.result.isError).toBe(true);
+  if (!Array.isArray(actual.result.content)) {
+    throw new Error("Expected content to be an array");
+  }
+  expect(actual.result.content[0].text).toContain("MCP error -32602");
+  expect(actual.result.content[0].text).toContain("invalid-tool");
 
   await writer.close();
   child.kill("SIGTERM");
