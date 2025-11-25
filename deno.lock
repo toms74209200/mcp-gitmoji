@@ -5,7 +5,7 @@
     "npm:gitmojis@^3.15.0": "3.15.0",
     "npm:vite@^7.1.12": "7.1.12_picomatch@4.0.3",
     "npm:vitest@^3.2.4": "3.2.4_vite@7.1.12__picomatch@4.0.3",
-    "npm:zod@^3.25.76": "3.25.76"
+    "npm:zod@^4.1.13": "4.1.13"
   },
   "npm": {
     "@esbuild/aix-ppc64@0.25.11": {
@@ -155,7 +155,7 @@
         "express-rate-limit",
         "pkce-challenge",
         "raw-body",
-        "zod",
+        "zod@3.25.76",
         "zod-to-json-schema"
       ]
     },
@@ -1064,11 +1064,14 @@
     "zod-to-json-schema@3.25.0_zod@3.25.76": {
       "integrity": "sha512-HvWtU2UG41LALjajJrML6uQejQhNJx+JBO9IflpSja4R03iNWfKXrj6W2h7ljuLyc1nKS+9yDyL/9tD1U/yBnQ==",
       "dependencies": [
-        "zod"
+        "zod@3.25.76"
       ]
     },
     "zod@3.25.76": {
       "integrity": "sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ=="
+    },
+    "zod@4.1.13": {
+      "integrity": "sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig=="
     }
   },
   "workspace": {
@@ -1078,7 +1081,7 @@
         "npm:gitmojis@^3.15.0",
         "npm:vite@^7.1.12",
         "npm:vitest@^3.2.4",
-        "npm:zod@^3.25.76"
+        "npm:zod@^4.1.13"
       ]
     }
   }
